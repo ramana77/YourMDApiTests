@@ -1,0 +1,161 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 11,
+        "name": "Post yourMD chat and validate response code",
+        "description": "",
+        "id": "yourmd-chat-tests;post-yourmd-chat-and-validate-response-code;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1267535393,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user sends a post request  with valid inputs and checks the \"200\" and validates",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 61
+                }
+              ],
+              "location": "YourMDApiSteps.userSendsAPostRequestForTheChatApi(int,DataTable)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Hint",
+                  "Value"
+                ],
+                "line": 6
+              },
+              {
+                "cells": [
+                  "Type a message …",
+                  "I\u0027m sorry, that selection isn\u0027t valid."
+                ],
+                "line": 7
+              }
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@PostYourMD"
+          },
+          {
+            "line": 1,
+            "name": "@API"
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "Post yourMD chat with invalid headers and  validate response code",
+        "description": "",
+        "id": "yourmd-chat-tests;post-yourmd-chat-with-invalid-headers-and--validate-response-code;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 549893939,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user sends a post request with invalid headers and checks the \"403\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "403",
+                  "offset": 63
+                }
+              ],
+              "location": "YourMDApiSteps.userSendsPostRequestWithInvalidHeaders(int)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@PostYourMD"
+          },
+          {
+            "line": 1,
+            "name": "@API"
+          }
+        ]
+      },
+      {
+        "line": 25,
+        "name": "Post yourMD chat with invalid body and  validate response code",
+        "description": "",
+        "id": "yourmd-chat-tests;post-yourmd-chat-with-invalid-body-and--validate-response-code;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 265204068,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user sends a post request with invalid body and checks the \"403\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "403",
+                  "offset": 60
+                }
+              ],
+              "location": "YourMDApiSteps.userSendsPostRequestWithInvalidBody(int)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@PostYourMD"
+          },
+          {
+            "line": 1,
+            "name": "@API"
+          }
+        ]
+      }
+    ],
+    "name": "YourMD Chat Tests",
+    "description": "",
+    "id": "yourmd-chat-tests",
+    "keyword": "Feature",
+    "uri": "PostYourMDChat.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@PostYourMD"
+      },
+      {
+        "line": 1,
+        "name": "@API"
+      }
+    ]
+  }
+]
